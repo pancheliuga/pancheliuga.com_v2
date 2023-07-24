@@ -1,0 +1,12 @@
+{
+  "name": "pancheliuga.com_v2",
+  "version": "1.0.0",
+  "description": "Hi 👋, this is my personal portfolio/blog website. It's built with Eleventy, Javascript and CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
