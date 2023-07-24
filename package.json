@@ -2,12 +2,20 @@
   "name": "pancheliuga.com_v2",
   "version": "1.0.0",
   "description": "Hi 👋, this is my personal portfolio/blog website. It's built with Eleventy, Javascript and CSS.",
-  "main": "index.js",
+  "author": "Oleksandr Pancheliuga",
+  "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "dev:11ty": "eleventy --serve --watch",
+    "build:11ty": "eleventy",
+    "start": "run-p dev:*",
+    "build": "run-s clean build:*"
   },
   "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pancheliuga/pancheliuga.com_v2"
+  },
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

@@ -1,0 +1,22 @@
+[
+  {
+    "platform": "github",
+    "url": "https://github.com/pancheliuga",
+    "icon": "github.svg"
+  },
+  {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/in/pancheliuga/",
+    "icon": "linkedin.svg"
+  },
+  {
+    "platform": "email",
+    "url": "mailto:pancheliuga.o@gmail.com",
+    "icon": "mailbox.svg"
+  },
+  {
+    "platform": "rss",
+    "url": "/feed.xml",
+    "icon": "rss.svg"
+  }
+]
