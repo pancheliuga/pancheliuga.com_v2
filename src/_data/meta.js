@@ -10,7 +10,7 @@ module.exports = {
   author: 'Oleksandr Pancheliuga', // i.e. Lene Saile - author's name. Must be set.
   authorEmail: 'pancheliuga.o@gmail.com', // i.e. hola@lenesaile.com - email of the author
   authorWebsite: 'https://pancheliuga.com/', // i.e. https.://www.lenesaile.com - the personal site of the author
-  themeColor: '#00373a', //  Manifest: defines the default theme color for the application
+  themeColor: '#0042BF', //  Manifest: defines the default theme color for the application
   themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.jpg', // fallback/default meta image
