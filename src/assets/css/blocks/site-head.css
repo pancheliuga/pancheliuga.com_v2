@@ -1,4 +1,8 @@
 .site-head {
+  background: var(--color-primary);
+}
+
+.site-head__inner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;

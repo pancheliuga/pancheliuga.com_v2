@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<section class="project-item">
+  <header class="hero">
+    <div class="[ hero__inner ] [ wrapper ]">
+      <div class="[ hero__content ] [ dot-shadow radius flow ] [ bg-dark-shade color-light flow-space-400 ]">
+        <h1 class="[ headline ] [ measure-compact ]" data-highlight="quinary">
+          {{ title }}
+        </h1>
+        <p class="measure-short">{{ summary }}</p>
+      </div>
+    </div>
+    <img src="{{ hero.image }}" alt="{{ hero.imageAlt }}" class="hero__image" />
+  </header>
+  <article class="[ key-facts ] [ panel dot-shadow ] [ bg-primary-shade color-light ]">
+    <div class="wrapper flow">
+      <h2 class="headline" data-highlight="secondary">Skills & Competencies</h2>
+      <div class=" leading-flat font-sans weight-bold flow-space-700">
+        <ol class="[ marker-list ] [ auto-grid ]">
+          {% for item in keyFacts %}
+            <li class="flow flow-space-300" data-icon="{{ item.icon }}">
+              <span class="text-500 lg:text-600">{{ item.description }}</span>
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="[ flow-space-700 ]">
+        <a class="button" data-variant="ghost" href="{{ Links.url }}" target="_blank">{{ Links.title }}</a>
+      </div>
+    </div>
+  </article>
+    <article class="[ page-content ] [ flow wrapper ] [ flow-space-700 gap-top-700 ]">
+        {{ content | safe }}
+    </article>
+</section>
+
+{% include "partials/cta.njk" %} 
+     
