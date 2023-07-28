@@ -1,10 +1,11 @@
 ---
 layout: base
 ---
+{% include "partials/page-header.njk" %}
 
 <article class="region page">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
+    <h1 {{ title }} </h1>
     {{ content | safe }}
   </div>
 </article>

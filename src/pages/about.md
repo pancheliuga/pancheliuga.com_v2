@@ -1,20 +1,36 @@
 ---
-title: About
 permalink: /about/index.html
-description: About this starter
-layout: page
-youtube: true
+title: 'About me'
+description: 'Lorem ipsum ......'
+layout: 'about'
+image: './src/assets/images/profile-photo.jpg'
+alt: "Oleksandr's portrait photo"
+primaryCTA:
+  title: 'My skills in action'
+  teaser: 'Click the button below to see how I implemented my knowledge in real-world cases.'
+  goal: '/projects/'
+  button: 'Portfolio'
 ---
 
-Based on the [companion website](https://buildexcellentwebsit.es/) of Andy Bell's talk 'Be the browser’s mentor, not its micromanager'. It takes over a core functionality: Using Tailwind CSS to generate CSS variables based on design tokens.
+Hi, I'm Oleksandr Pancheliuga — a professional land surveyor/GIS analyst — based in Ukraine 🇺🇦. I'm skilled in spatial data processing and analysis, remote sensing/earth observations, data visualization, and undertaking topographic, hydrographic and utility surveys.
 
-Like buildexcellentwebsit.es, this starter uses modern CSS, fluid type & space, flexible Layouts and Progressive Enhancement, wrapped in a basic template, ideal for personal websites and other small projects.
+After graduating Master's degree in Geographic information systems and technologies ([National university of water and environmental engineering](https://nuwm.edu.ua/en/), 2008), I started my working path as a land surveyor/manager.
 
-The aim is to spread the idea and use of this _excellent_ workflow. To work with it efficiently you should be familiar with [cube.fyi](https://cube.fyi/), [utopia.fyi](https://utopia.fyi/) and [every-layout.dev](https://every-layout.dev/).
+I have worked in the Ukrainian land management and cadastre system for over a decade as a self-employed person. During that time, I primarily focused on implementing new geospatial technology in our industries.
 
-- Find out more on https://buildexcellentwebsit.es/.
-- Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites
+I enjoy working on cutting-edge projects and enabling new geospatial technologies that directly impact our lives. I also enjoy being surrounded by brilliant people in the geo community. I'm always attentive to new challenges and search for opportunities that allow me to grow professionally.
 
-## Watch the talk
+My specialization and interests are focused on:
 
-{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+- Geographic Information Systems (GIS)
+- Remote sensing/earth observations
+- Spatial data analysis
+- Data science
+- Web map development
+
+Listed below are some of the technologies I use:
+
+- Programming languages: Python, Javascript
+- Remote sensing/GIS: Google Earth Engine (JS and Python APIs), OGR/GDAL, QGIS
+- Python packages: pandas, geopandas, geopy, osmnx, matplotlib, geemap, numpy, rasterio, xarray, folium, plotly
+- Web development: Streamlit, Google Earth Engine Apps, HTML, CSS, Jamstack

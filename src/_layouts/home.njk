@@ -2,15 +2,7 @@
 layout: base
 ---
 
-<header class="section spot-color-primary">
-  <div class="section__inner">
-    <div class="wrapper flow region">
-      <h1>{{ title }}</h1>
-      <p>{{ summary }}</p>
-    </div>
-  </div>
-  {% include 'svg/divider-curve.svg' %}
-</header>
+{% include "partials/page-header.njk" %}
 
 <article class="region">
   <div class="wrapper flow prose">

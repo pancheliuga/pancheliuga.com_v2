@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+{% include "partials/page-header.njk" %}
+
+<article class="region">
+  <div class="wrapper flow content">
+    {{ content | safe }}
+  </div>
+</article>
+
+{% set ctaContent = primaryCTA %} 
+{% include "partials/cta.njk" %}

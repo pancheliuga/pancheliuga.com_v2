@@ -1,5 +1,6 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
+  domain: 'pancheliuga.com',
   siteName: 'Oleksandr Pancheliuga',
   siteDescription:
     'Join me on a thrilling journey through the realms of Cloud Engineering, DevOps, Infrastructure as Code (IaC), and Continuous Integration/Continuous Deployment (CI/CD) with a background in geospatial technology. Embrace the adventure of learning and growth in this tech-driven world.',
@@ -37,7 +38,7 @@ module.exports = {
     zip: '',
     mobileDisplay: '',
     mobileCall: '',
-    email: '',
+    email: 'pancheliuga.o@gmail.com',
     cif: ''
   },
   menu: {
