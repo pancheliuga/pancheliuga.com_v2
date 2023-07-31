@@ -20,7 +20,7 @@
 
 /* set on parent div to get the right z-index context */
 .ontop {
-  z-index: 1;
+  z-index: 3;
   position: relative;
 }
 

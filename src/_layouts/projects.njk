@@ -24,7 +24,9 @@ layout: base
 
     <div class="description flow" style="--button-color: var(--color-tertiary)">
       <!-- <span class="pill">{{ project.data.type }}</span> -->
-      <h2>{{ project.data.title }}</h2>
+      <h2>
+        <a href="{{ project.url | url }}"> {{ project.data.title }}</a>
+      </h2>
 
       <p>{{ project.data.lead | md | safe }}</p>
       <a
@@ -39,3 +41,4 @@ layout: base
 
 {% set ctaContent = primaryCTA %}  
 {% include "partials/cta.njk" %}
+  
