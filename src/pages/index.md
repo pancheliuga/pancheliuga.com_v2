@@ -10,8 +10,8 @@ blog:
   title: 'Recent Posts'
   intro:
 primaryCTA:
-  title: 'Have a look at some of the projects I built!'
-  teaser: 'I love creating personalized web experiences that are fast, secure, accessible, environmentally friendly and privacy compliant.'
+  title: 'My skills in action'
+  teaser: 'Click the button below to see how I implemented my knowledge in real-world cases.'
   goal: '/projects/'
   button: 'Projects'
 ---

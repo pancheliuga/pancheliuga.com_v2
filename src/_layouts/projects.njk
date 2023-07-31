@@ -1,0 +1,41 @@
+---
+layout: base 
+---
+
+{% include "partials/page-header.njk" %}
+
+  {% set projectlist = collections.projects %} 
+  {% for project in projectlist %}
+
+  <article class="wrapper projects region flow">
+    <div class="visual relative">
+      {% if project.data.image %} {% image project.data.image, "object-fit-cover" ,
+      "object-fit-cover", project.data.alt, "lazy", "(min-width: 1750px) 50vw, 100vw" %}
+      {% endif %}
+
+      <div class="details">
+        <ul>
+          {% for item in project.data.technologies %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="description flow" style="--button-color: var(--color-tertiary)">
+      <!-- <span class="pill">{{ project.data.type }}</span> -->
+      <h2>{{ project.data.title }}</h2>
+
+      <p>{{ project.data.lead | md | safe }}</p>
+      <a
+        class="button"
+        href="{{ project.data.url }}"
+        target="_blank"
+        >{{ project.data.button }}</a
+      >
+    </div>
+  </article>
+  {% endfor %}
+
+{% set ctaContent = primaryCTA %}  
+{% include "partials/cta.njk" %}

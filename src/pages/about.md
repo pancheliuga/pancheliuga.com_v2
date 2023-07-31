@@ -5,11 +5,15 @@ description: 'Lorem ipsum ......'
 layout: 'about'
 image: './src/assets/images/profile-photo.jpg'
 alt: "Oleksandr's portrait photo"
+breakout:
+  title: 'I live and work in Madrid'
+  intro: 'Since 2010, I have been living and working in Madrid, La Latina. A lot of my clients are based in Spain, but I also work for international clients.'
+finalWords: "I don't consider myself an expert anywhere, as I'm constantly readjusting perspectives and optimising my way of working. I am a quick and flexible learner and have no trouble familiarising myself with new methods and techniques. "
 primaryCTA:
-  title: 'My skills in action'
-  teaser: 'Click the button below to see how I implemented my knowledge in real-world cases.'
-  goal: '/projects/'
-  button: 'Portfolio'
+  title: 'For recruiters only'
+  teaser: "Explore my resume for a perfect match and let's make remarkable strides together. Reach out today!"
+  goal: 'https://resume.pancheliuga.com/'
+  button: 'My resume'
 ---
 
 Hi, I'm Oleksandr Pancheliuga — a professional land surveyor/GIS analyst — based in Ukraine 🇺🇦. I'm skilled in spatial data processing and analysis, remote sensing/earth observations, data visualization, and undertaking topographic, hydrographic and utility surveys.

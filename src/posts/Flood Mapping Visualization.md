@@ -13,7 +13,7 @@ In addition to my previous [post about Flood Mapping and Damage Assessment](http
 
 Time series animations of Earth observation imagery are captivating and engaging (just look at the following image of the resulting animation).
 
-![Flood time-series animation](/assets/images/for-posts/flood_full.gif)
+![Flood time-series animation](/assets/images/blog/flood_full.gif)
 
 People tend to perceive visual information in "RGB mode 🌈", and we can also visualize a SAR image as a multi-band RGB image. There is a common trick to using the VV band in the red channel, the VH band in the green channel, and the VV/VH in the blue channel.
 

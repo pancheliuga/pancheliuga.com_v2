@@ -14,7 +14,7 @@ In this case study, I used well-known <a href='https://www.space4water.org/capac
 
 According to the materials I mentioned above ⬆️, the workflow looks like this:
 
-{% imagePlaceholder "./src/assets/images/for-posts/flood_mapping_GEE_workflow_1.png", "The workflow schema", "" %}
+{% imagePlaceholder "./src/assets/images/blog/flood_mapping_GEE_workflow_1.png", "The workflow schema", "" %}
 
 The [GEE script](https://github.com/Pancheliuga/flood-mapping-damage-assessment/blob/main/gee-script) with comments you can find on my [GitHub repo](https://github.com/Pancheliuga/flood-mapping-damage-assessment). Or, if you have a GEE account, follow the [link](https://code.earthengine.google.com/82d3678ce0faec31838fb80130d04b3d).
 

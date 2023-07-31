@@ -272,7 +272,7 @@ fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide', width=800, he
 fig.show()
 ```
 
-{% imagePlaceholder "./src/assets/images/for-posts/output_25_1.png", "Civilian harm by type of affected area", "" %}
+{% imagePlaceholder "./src/assets/images/blog/output_25_1.png", "Civilian harm by type of affected area", "" %}
 
 #### Analysing civilian harm by date
 
@@ -286,7 +286,7 @@ fig = px.line(incidents_by_day, x='date', y='n_events', title='Number of inciden
 fig.show()
 ```
 
-{% imagePlaceholder "./src/assets/images/for-posts/output_28_0.png", "Number of incidents per day", "" %}
+{% imagePlaceholder "./src/assets/images/blog/output_28_0.png", "Number of incidents per day", "" %}
 
 ```python
 fig = px.bar(incidents_by_day, x='date', y='n_events', color='n_events')
@@ -294,7 +294,7 @@ fig = px.bar(incidents_by_day, x='date', y='n_events', color='n_events')
 fig.show()
 ```
 
-{% imagePlaceholder "./src/assets/images/for-posts/output_29_0.png", "Number of incidents per day - bar", "" %}
+{% imagePlaceholder "./src/assets/images/blog/output_29_0.png", "Number of incidents per day - bar", "" %}
 
 ## Geospatial dimension
 
@@ -313,7 +313,7 @@ ax = geo_incidents_df.plot(figsize=(20,10))
 cx.add_basemap(ax)
 ```
 
-{% imagePlaceholder "./src/assets/images/for-posts/output_34_0.png", "Map with points", "" %}
+{% imagePlaceholder "./src/assets/images/blog/output_34_0.png", "Map with points", "" %}
 
 From the map above, we can define that few points are outside Ukraine.
 
@@ -444,7 +444,7 @@ ax = regions.plot(figsize=(20,10))
 cx.add_basemap(ax)
 ```
 
-{% imagePlaceholder "./src/assets/images/for-posts/output_40_0.png", "Map with regions", "" %}
+{% imagePlaceholder "./src/assets/images/blog/output_40_0.png", "Map with regions", "" %}
 
 ```python
 geo_incidents_df.crs == regions.crs
@@ -575,7 +575,7 @@ fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide', width=800, he
 fig.show()
 ```
 
-{% imagePlaceholder "./src/assets/images/for-posts/output_49_0.png", "Civilian harm by region", "" %}
+{% imagePlaceholder "./src/assets/images/blog/output_49_0.png", "Civilian harm by region", "" %}
 
 #### Choropleth classification
 

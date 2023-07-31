@@ -1,6 +1,6 @@
 ---
 title: Blog
-description: "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important."
+description: 'The latest articles demonstrating my design thinking, strategy and expertise.'
 layout: blog
 permalink: /blog/index.html
 ---
