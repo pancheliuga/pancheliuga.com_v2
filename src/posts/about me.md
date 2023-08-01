@@ -2,6 +2,8 @@
 title: 'About me'
 description: 'A smattering of my main interests, skills, and experience.'
 date: '2022-04-26'
+image: './src/assets/images/profile-photo.jpg'
+alt: "Oleksandr's portrait photo"
 ---
 
 Hi, I'm Oleksandr Pancheliuga — a professional land surveyor/GIS analyst — based in Ukraine 🇺🇦. I'm skilled in spatial data processing and analysis, remote sensing/earth observations, data visualization, and undertaking topographic, hydrographic and utility surveys.

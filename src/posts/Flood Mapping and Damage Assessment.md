@@ -2,6 +2,8 @@
 title: 'Flood Mapping and Damage Assessment'
 description: 'Consequences of intentionally flooding the countryside in the Irpin River basin northwest of Kyiv.'
 date: '2022-05-02'
+image: './src/assets/images/blog/flood_mapping_GEE_workflow_1.png'
+alt: 'The workflow schema'
 ---
 
 As a part of my learning journey in Google Earth Engine, I tried myself in a real-world case. In the first days of the war, Ukrainian forces flooded the area in the Irpin River basin northwest of Kyiv. There is <a href="https://www.nytimes.com/2022/04/27/world/europe/ukraine-russia-war-flood-infrastructure.html" target="_blank">an excellent article</a> in The New York Times about why it happened and how efficient it was in terms of military strategy.

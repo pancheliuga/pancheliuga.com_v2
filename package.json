@@ -9,7 +9,7 @@
     "dev:11ty": "eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "run-p dev:*",
-    "build": "run-s clean build:*"
+    "build": "ELEVENTY_ENV=production run-s clean build:*"
   },
   "keywords": [],
   "repository": {

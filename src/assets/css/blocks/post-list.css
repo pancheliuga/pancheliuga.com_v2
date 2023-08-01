@@ -1,0 +1,10 @@
+
+.post-list {
+    --grid-placement: auto-fit;
+}
+
+@media(min-width: 50em) {
+    .post-list {
+        --grid-min-item-size: 22rem;
+    }
+}

@@ -2,6 +2,8 @@
 title: 'Flood Mapping Visualization'
 description: 'Times series animation and a split-panel map as tools for flood visualization.'
 date: '2022-05-08'
+image: './src/assets/images/projects/flood.gif'
+alt: 'Times Series Animation of flood.'
 ---
 
 In addition to my previous [post about Flood Mapping and Damage Assessment](https://pancheliuga.com/blog/flood-mapping-and-damage-assessment/), I decided to make two types of satellite imagery visualization:

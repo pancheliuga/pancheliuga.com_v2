@@ -2,6 +2,8 @@
 title: 'Streamlit framework for developing interactive dashboards and geospatial visualization'
 description: 'Web app for Spatial Data Analysis of Civilian Harm in Ukraine.'
 date: '2022-06-03'
+image: './src/assets/images/projects/SDA-civil-harm-app.jpg'
+alt: 'screenshot of the website application'
 ---
 
 I guess a lot of folks who play with data in [Jupyter](https://jupyter.org/) notebooks caught themselves thinking about how to present the results of their analysis. And while working on my last [project](https://pancheliuga.com/projects/spatial-data-analysis-of-civilian-harm-in-ukraine/), I faced the same challenge.

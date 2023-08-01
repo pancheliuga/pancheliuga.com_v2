@@ -2,6 +2,8 @@
 title: 'Spatial Data Analysis of Civilian Harm in Ukraine'
 description: 'Geospatial data science approach for statistical visualization.'
 date: '2022-05-24'
+image: './src/assets/images/projects/heatmap.png'
+alt: 'Heatmap of incidents'
 ---
 
 Recently I came across a new data source from the OSINT group [Bellingcat](https://www.bellingcat.com/), based on incidents in Ukraine that have resulted in potential civilian harm. This data began collection on February 24, 2022, and intends to be a living document that will continue to be updated as long as the war persists. Therefore, this data is not an exhaustive list of civilian harm in Ukraine but rather a representation of all incidents that Bellingcat has collected and determined the exact locations.
