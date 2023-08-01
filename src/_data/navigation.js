@@ -1,7 +1,7 @@
 module.exports = {
   top: [
     {
-      text: 'About',
+      text: 'About me',
       url: '/about/'
     },
     {
@@ -13,14 +13,5 @@ module.exports = {
       url: '/blog/'
     }
   ],
-  bottom: [
-    {
-      text: 'Imprint',
-      url: '/imprint/'
-    },
-    {
-      text: 'Privacy',
-      url: '/privacy/'
-    }
-  ]
+  bottom: []
 };

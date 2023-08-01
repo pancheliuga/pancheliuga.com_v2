@@ -1,5 +1,6 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
+  domain: 'pancheliuga.com',
   siteName: 'Oleksandr Pancheliuga',
   siteDescription:
     'Join me on a thrilling journey through the realms of Cloud Engineering, DevOps, Infrastructure as Code (IaC), and Continuous Integration/Continuous Deployment (CI/CD) with a background in geospatial technology. Embrace the adventure of learning and growth in this tech-driven world.',
@@ -10,7 +11,7 @@ module.exports = {
   author: 'Oleksandr Pancheliuga', // i.e. Lene Saile - author's name. Must be set.
   authorEmail: 'pancheliuga.o@gmail.com', // i.e. hola@lenesaile.com - email of the author
   authorWebsite: 'https://pancheliuga.com/', // i.e. https.://www.lenesaile.com - the personal site of the author
-  themeColor: '#00373a', //  Manifest: defines the default theme color for the application
+  themeColor: '#0042BF', //  Manifest: defines the default theme color for the application
   themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.jpg', // fallback/default meta image
@@ -37,7 +38,7 @@ module.exports = {
     zip: '',
     mobileDisplay: '',
     mobileCall: '',
-    email: '',
+    email: 'pancheliuga.o@gmail.com',
     cif: ''
   },
   menu: {

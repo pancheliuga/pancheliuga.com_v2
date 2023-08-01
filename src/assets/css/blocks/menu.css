@@ -2,6 +2,7 @@
   nav.navbar {
     --nav-button-display: none;
     --nav-position: static;
+    --text-color: var(--color-light);
   }
 
   nav.navbar ul {
@@ -19,7 +20,7 @@
 
 /* set on parent div to get the right z-index context */
 .ontop {
-  z-index: 1;
+  z-index: 3;
   position: relative;
 }
 
@@ -63,8 +64,7 @@ nav.navbar [aria-expanded='false'] + ul {
 
 /* Basic link styling */
 nav.navbar a {
-  --text-color: var(--color-dark);
-  color: var(--text-color);
+  color: var(--text-color, var(--color-dark));
   padding: 0.1rem;
   text-decoration: none;
   display: block;
@@ -76,17 +76,17 @@ nav.navbar a {
 
 /* Change the border-color on :hover and :focus */
 nav.navbar a:where(:hover, :focus) {
-  --border-color: var(--text-color);
+  --border-color: var(--color-secondary);
 }
 
 /* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
-  --border-color: var(--color-primary);
-  --text-color: var(--color-primary);
+  --border-color: var(--color-secondary);
 }
 
 /* Reset button styling */
 nav.navbar button {
+  color: var(--color-light);
   all: unset;
   display: var(--nav-button-display, flex);
   align-items: center;

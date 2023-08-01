@@ -1,0 +1,16 @@
+{% set ctaPrefix = cta %}
+
+{% if ctaContent %} 
+  {% set ctaPrefix = ctaContent %}
+{% endif %}
+
+<article class="section spot-color-secondary">
+    {% include 'svg/divider-curve.svg' %}
+    <div class="section__inner region">
+      <div class="wrapper flow">
+        <h2>{{ ctaPrefix.title }}</h2>
+        <p>{{ ctaPrefix.teaser }}</p>
+        <a href="{{ ctaPrefix.goal }}" class="button">{{ ctaPrefix.button }}</a>
+      </div>
+    </div>
+  </article>

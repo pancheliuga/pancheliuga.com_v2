@@ -2,29 +2,27 @@
 layout: base
 ---
 
-<header class="section spot-color-secondary">
-  <div class="section__inner region">
-    <div class="wrapper flow">
-      <section class="prose text-center">
-        <h1 class="fade-in">{{ description }}</h1>
-      </section>
-    </div>
-  </div>
+{% include "partials/page-header.njk" %}
 
-</header>
-
-<article class="wrapper region">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist %}
-
-    <li class="card flow overflow-hidden">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h2>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
+<div class="wrapper region grid" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections.posts %} 
+    {% for post in postslist %}
+    <article class="card">
+    {% if post.data.image %}
+    {% image post.data.image, "", "card__hero", post.data.alt, "lazy", "" %}
+    {% else %}
+    {% image "https://source.unsplash.com/collection/2195859/571x250/?sig={{ range(0, 99) | random }}/daily", "object-fit-cover", "card__hero", "Random abstract image to fill the card.", "lazy", "" %}
+    {% endif %}
+      <div class="card__content flow">
+        <h3>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h3>
+        {% set definedDate = post.data.date %} {% include "partials/date.njk" %}
+        <p>{{ post.data.description }}</p>
+      </div>
+    </article>
     {% endfor %}
-  </ul>
-</article>
+</div>
+
+{% set ctaContent = cta %} 
+{% include "partials/cta.njk" %}

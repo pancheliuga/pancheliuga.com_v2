@@ -1,17 +1,21 @@
 ---
 permalink: /index.html
-title: ' Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: 'Hi, I’m Oleksandr'
+seo:
+  title: 'Oleksandr Pancheliuga, cloud engineer'
+summary: 'You can explore my writing, learn more about me, or subscribe to my RSS feed.'
+description: 'Join me on a thrilling journey through the realms of Cloud Engineering, DevOps, Infrastructure as Code (IaC), and Continuous Integration/Continuous Deployment (CI/CD) with a background in geospatial technology. Embrace the adventure of learning and growth in this tech-driven world.'
 layout: 'home'
 blog:
-  title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
+  title: 'Recent Posts'
+  intro:
+primaryCTA:
+  title: 'My skills in action'
+  teaser: 'Click the button below to see how I implemented my knowledge in real-world cases.'
+  goal: '/projects/'
+  button: 'Projects'
 ---
 
-## An Eleventy starter
+## Why though?
 
-This (opiniated) [Eleventy](https://www.11ty.dev/) starter is based on [Andy Bell's](https://mastodon.social/@andy@bell.bz) talk 'Be the browser’s mentor, not its micromanager' and it's companion website buildexcellentwebsit.es.
-
-In his words, it's about hinting the browser rather than micromanaging it, using progressive enhancement, CSS layout, fluid type & spacing, as well as modern CSS features.
-
-This way we can shape frontends that look good to everyone, regardless of device, connection speed or context.
+My passion for geospatial technology has been the compass guiding me throughout my academic and professional pursuits. On this personal portfolio/blog website, I aim to document and share my experiences, challenges, and triumphs as I navigate the ever-evolving landscape of cutting-edge technologies.

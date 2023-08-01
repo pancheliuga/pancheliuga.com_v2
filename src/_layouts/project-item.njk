@@ -1,0 +1,53 @@
+---
+layout: base
+---
+
+  <header class="hero | region" style="--region-space-bottom: var(--space-m); --region-space-top: var(--space-3xl)">
+    <div class="hero__inner wrapper ">
+      <div class="hero__content flow">
+        <h1>
+          {{ title }}
+        </h1>
+        <p>{{ summary }}</p>
+      </div>
+    </div>
+    {% if image %} {% image image, "object-fit-cover" ,
+      "object-fit-cover hero__image", alt, "lazy", "(min-width: 1750px) 50vw, 100vw" %}
+      {% endif %}
+  </header>
+
+    <article class="region blog">
+    <div class="wrapper flow prose">
+      <p>{{ lead | md | safe }}</p>
+    </div>
+  </article>
+
+    <article class="section spot-color-primary">
+    {% include 'svg/divider-curve.svg' %}
+    <div class="section__inner region">
+      <div class="wrapper flow">
+        <h2>Skills & Competencies</h2>
+        <p>Key skills, tools which I used in current project</p>
+        <ul class="features grid mt-l-xl" role="list">
+          {% for item in technologies %}
+            <li class="flow">
+              <h3>
+                {{ item }}
+              </h3>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </article>
+
+  <article class="region blog">
+    <div class="wrapper flow prose">
+      {{ content | safe }}
+    </div>
+  </article>
+
+{% set ctaContent = cta %} 
+{% include "partials/cta.njk" %}
+     

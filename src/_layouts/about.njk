@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+{% include "partials/page-header.njk" %}
+
+<article class="region">
+  <div class="wrapper flow content">
+    {{ content | safe }}
+    
+    <section class="breakout relative">
+      <div class="sidebar my-l-xl flow">
+        <header class="flow mr-xs">
+          <h2>{{ breakout.title }}</h2>
+          <p>{{ breakout.intro }}</p>
+        </header>
+        {% image image, "", "object-fit-cover", alt,
+        "eager" %}
+      </div>
+    </section>
+
+    {{ finalWords | md | safe }}
+  </div>
+</article>
+
+{% set ctaContent = primaryCTA %} 
+{% include "partials/cta.njk" %} 

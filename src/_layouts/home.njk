@@ -2,14 +2,7 @@
 layout: base
 ---
 
-<header class="section spot-color-primary">
-  <div class="section__inner">
-    <div class="wrapper flow region">
-      <h1 class="text-center">{{ title }}</h1>
-    </div>
-  </div>
-  {% include 'svg/divider-waves.svg' %}
-</header>
+{% include "partials/page-header.njk" %}
 
 <article class="region">
   <div class="wrapper flow prose">
@@ -17,27 +10,38 @@ layout: base
   </div>
 </article>
 
-<article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose">
+{% set ctaContent = primaryCTA %} 
+{% include "partials/cta.njk" %}
+
+
+<div class="region">
+  <div class="wrapper">
     <h2>{{ blog.title }}</h2>
-    <!-- blog intro text is optional. -->
     {% if blog.intro %}
     <p>{{ blog.intro }}</p>
     {% endif %}
   </div>
-  <!-- TODO: duplicate of partials/blog.njk -->
 
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections.posts %} {% for post in postslist.slice(0, 4) %}
-
-    <li class="card flow overflow-hidden">
-      <h3>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h3>
-      {% set definedDate = post.date %} {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-
+  <div class="wrapper grid mt-l-xl" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections.posts %} 
+    {% for post in postslist.slice(0, 4) %}
+    <article class="card">
+    {% if post.data.image %}
+    {% image post.data.image, "", "card__hero", post.data.alt, "lazy", "" %}
+    {% else %}
+    {% image "https://source.unsplash.com/collection/2195859/571x250/?sig={{ range(0, 99) | random }}/daily", "object-fit-cover", "card__hero", "Random abstract image to fill the card.", "lazy", "" %}
+    {% endif %}
+      <div class="card__content flow">
+        <h3>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h3>
+        {% set definedDate = post.data.date %} {% include "partials/date.njk" %}
+        <p>{{ post.data.description }}</p>
+      </div>
+    </article>
     {% endfor %}
-  </ul>
-</article>
+  </div>
+</div>
+
+{% set ctaContent = cta %} 
+{% include "partials/cta.njk" %}

@@ -28,33 +28,35 @@ const {
   minifyCss,
   minifyJs,
   mdInline,
-  splitlines,
+  splitlines
 } = require('./config/filters/index.js');
 
 // module import shortcodes
 const {
   imageShortcodePlaceholder,
+  imageShortcode,
   includeRaw,
   liteYoutube,
+  asideShortcode
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const { getAllPosts } = require('./config/collections/index.js');
+const {getAllPosts, getProjects} = require('./config/collections/index.js');
 
 // module import events
-const { svgToJpeg } = require('./config/events/index.js');
+const {svgToJpeg} = require('./config/events/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
-const { EleventyRenderPlugin } = require('@11ty/eleventy');
+const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const { slugifyString } = require('./config/utils');
-const { escape } = require('lodash');
+const {slugifyString} = require('./config/utils');
+const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 
-module.exports = (eleventyConfig) => {
+module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
   eleventyConfig.addWatchTarget('./utils/*.js');
@@ -65,6 +67,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addLayoutAlias('home', 'home.njk');
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
+  eleventyConfig.addLayoutAlias('project', 'project.njk');
 
   // 	---------------------  Custom filters -----------------------
   eleventyConfig.addFilter('limit', limit);
@@ -87,10 +90,9 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter('entries', Object.entries);
 
   // 	--------------------- Custom shortcodes ---------------------
-  eleventyConfig.addNunjucksAsyncShortcode(
-    'imagePlaceholder',
-    imageShortcodePlaceholder
-  );
+  eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
+  eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
+  eleventyConfig.addPairedShortcode('aside', asideShortcode);
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
@@ -100,13 +102,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
 
   // 	--------------------- Custom Template Languages ---------------------
-  eleventyConfig.addPlugin(
-    require('./config/template-languages/css-config.js')
-  );
+  eleventyConfig.addPlugin(require('./config/template-languages/css-config.js'));
   eleventyConfig.addPlugin(require('./config/template-languages/js-config.js'));
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
+  eleventyConfig.addCollection('projects', getProjects);
 
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', svgToJpeg);
@@ -121,13 +122,13 @@ module.exports = (eleventyConfig) => {
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
-  ['src/assets/fonts/', 'src/assets/images/'].forEach((path) =>
+  ['src/assets/fonts/', 'src/assets/images/'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 
   // social icons to root directory
   eleventyConfig.addPassthroughCopy({
-    'src/assets/images/favicon/*': '/',
+    'src/assets/images/favicon/*': '/'
   });
 
   // 	--------------------- general config -----------------------
@@ -144,7 +145,7 @@ module.exports = (eleventyConfig) => {
       output: 'dist',
       input: 'src',
       includes: '_includes',
-      layouts: '_layouts',
-    },
+      layouts: '_layouts'
+    }
   };
 };
