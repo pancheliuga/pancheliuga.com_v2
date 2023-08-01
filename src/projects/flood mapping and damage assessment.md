@@ -16,11 +16,13 @@ lead: "The main goal of this project was to implement my Google Earth Engine ski
 Using SAR data on flood mapping is a standard and reliable method for determining the extent of significant floods. The main advantage of using microwave data is that it can penetrate cloud cover, operate in any weather conditions, and provide timely and crucial information both day and night since it is not dependent on sunlight for reflectance."
 ---
 
+{% include "partials/toc.njk" %}
+
 ### Part 1. Spatial Data Analysis
 
 In the first days of the war, Ukrainian forces flooded the area in the Irpin River basin northwest of Kyiv. There is [an excellent article](https://www.nytimes.com/2022/04/27/world/europe/ukraine-russia-war-flood-infrastructure.html) in The New York Times about why it happened and how efficient it was in terms of military strategy.
 
-In this case study, I used well-known [recommended practices](https://www.space4water.org/capacity-building-and-training-material/recommended-practice-flood-mapping-and-damage-assessment) by [United Nations Office for Outer Space Affairs](https://www.space4water.org/stakeholder/united-nations-office-outer-space-affairs).
+{% aside %} In this case study, I used well-known [recommended practices](https://www.space4water.org/capacity-building-and-training-material/recommended-practice-flood-mapping-and-damage-assessment) by [United Nations Office for Outer Space Affairs](https://www.space4water.org/stakeholder/united-nations-office-outer-space-affairs).{% endaside %}
 
 According to the materials I mentioned above ⬆️, the workflow looks like this:
 

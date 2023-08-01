@@ -2,11 +2,13 @@ const markdownIt = require('markdown-it');
 const markdownItPrism = require('markdown-it-prism');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItClass = require('@toycode/markdown-it-class');
+const markdownItTocDoneRight = require('markdown-it-toc-done-right');
 const markdownItLinkAttributes = require('markdown-it-link-attributes');
 const markdownItEmoji = require('markdown-it-emoji');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownitMark = require('markdown-it-mark');
 const markdownitAbbr = require('markdown-it-abbr');
+const markdownitDeflist = require('markdown-it-deflist');
 const {slugifyString} = require('../utils');
 
 const markdownLib = markdownIt({
@@ -30,6 +32,15 @@ const markdownLib = markdownIt({
     ol: 'list',
     ul: 'list'
   })
+  .use(markdownItTocDoneRight, {
+    placeholder: `{:toc}`,
+    slugify: slugifyString,
+    containerId: 'toc',
+    listClass: 'toc-list',
+    itemClass: 'toc-item',
+    linkClass: 'toc-link',
+    listType: 'ol'
+  })
   .use(markdownItLinkAttributes, [
     {
       // match external links
@@ -45,6 +56,9 @@ const markdownLib = markdownIt({
   .use(markdownItEmoji)
   .use(markdownItFootnote)
   .use(markdownitMark)
-  .use(markdownitAbbr);
+  .use(markdownitAbbr)
+  .use(markdownitDeflist, {
+    ul: 'sdfg'
+  });
 
 module.exports = markdownLib;

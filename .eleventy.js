@@ -36,7 +36,8 @@ const {
   imageShortcodePlaceholder,
   imageShortcode,
   includeRaw,
-  liteYoutube
+  liteYoutube,
+  asideShortcode
 } = require('./config/shortcodes/index.js');
 
 // module import collections
@@ -91,6 +92,7 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
+  eleventyConfig.addPairedShortcode('aside', asideShortcode);
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
