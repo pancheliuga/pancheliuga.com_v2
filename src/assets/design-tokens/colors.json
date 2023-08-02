@@ -29,6 +29,15 @@
     {
       "name": "Secondary Glare",
       "value": "#FFE3E5"
+    },
+    {
+      "name": "Tertiary",
+      "value": "#f5cf38"
+    },
+    {
+      "name": "Tertiary Glare",
+      "value": "#e0c24d"
     }
   ]
 }
+ 

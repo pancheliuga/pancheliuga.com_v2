@@ -15,7 +15,7 @@
 }
 
 .prose mark {
-  background: var(--color-primary-glare);
+  background: var(--color-tertiary);
 }
 
 .prose :not(.grid) li + li {
