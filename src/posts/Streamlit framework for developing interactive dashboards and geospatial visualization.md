@@ -6,7 +6,7 @@ image: './src/assets/images/projects/SDA-civil-harm-app.jpg'
 alt: 'screenshot of the website application'
 ---
 
-I guess a lot of folks who play with data in [Jupyter](https://jupyter.org/) notebooks caught themselves thinking about how to present the results of their analysis. And while working on my last [project](https://pancheliuga.com/projects/spatial-data-analysis-of-civilian-harm-in-ukraine/), I faced the same challenge.
+I guess a lot of folks who play with data in [Jupyter](https://jupyter.org/) notebooks caught themselves thinking about how to present the results of their analysis. And while working on my last [project](/projects/spatial-data-analysis-of-civilian-harm-in-ukraine/), I faced the same challenge.
 
 Of course, I like to work in a Jupyter environment, and today we have modern cloud-based solutions like [Google Colab](https://colab.research.google.com/) and [JupyterHub](https://jupyter.org/hub), which open the easy way to share the results of research. But in general, the end-users are students, researchers, and data scientists who can step-by-step reproduce your data analysis.
 

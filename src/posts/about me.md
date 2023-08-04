@@ -2,9 +2,15 @@
 title: 'About me'
 description: 'A smattering of my main interests, skills, and experience.'
 date: '2022-04-26'
-image: './src/assets/images/profile-photo.jpg'
+image: './src/assets/images/blog/profile-photo-deprecated.jpg'
 alt: "Oleksandr's portrait photo"
 ---
+
+{% aside %} 📅 Hey there! 👋 Just a quick update to let you know that ==this post might seem a bit outdated.== As a lifelong learner, I've been on an incredible journey of evolution – transitioning from a land surveyor to a skilled developer and cloud engineer! 🚀
+
+For a more detailed look into my background and current interests, feel free to check out my ["About me"](/about/) page. There, you'll find the gist of my experiences and passions. 🌐
+
+Now, you might wonder why I've decided to leave this post as is. Well, it's because I believe in embracing change and following my growth trajectory. As I continue to explore new opportunities and technologies, this post becomes a testament to my exciting journey. 🌱 {% endaside %}
 
 Hi, I'm Oleksandr Pancheliuga — a professional land surveyor/GIS analyst — based in Ukraine 🇺🇦. I'm skilled in spatial data processing and analysis, remote sensing/earth observations, data visualization, and undertaking topographic, hydrographic and utility surveys.
 
@@ -29,4 +35,4 @@ Listed below are some of the technologies I use:
 - Python packages: pandas, geopandas, geopy, osmnx, matplotlib, geemap, numpy, rasterio, xarray, folium, pyplot
 - Web development: Streamlit, Google Earth Engine Apps, HTML, CSS, Jamstack
 
-Lately, I have devoted myself to improving my soft and hard skills and launched this website. You can read more about it in this [post](/blog/the-very-first-post/).
+Lately, I have devoted myself to improving my soft and hard skills and launched this website. You can read more about it in this ==[post](/blog/the-very-first-post/).==
