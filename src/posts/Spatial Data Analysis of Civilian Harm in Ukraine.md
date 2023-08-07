@@ -12,7 +12,9 @@ So I tried to apply my [Spatial Data Science](https://carto.com/what-is-spatial-
 
 All computations were made in the Jupyter notebook, and I really like Jupyter for its ability to represent your work without additional storytelling in the article.
 
-See [source code (jupyter notebook) in repo](https://github.com/Pancheliuga/sda-civilian-harm) and welcome to discover⬇️.
+See [source code (jupyter notebook) in repo](https://github.com/Pancheliuga/sda-civilian-harm) and welcome to discover.
+
+{% include "partials/toc.njk" %}
 
 #### Required modules
 
