@@ -3,7 +3,7 @@ permalink: /about/index.html
 title: 'About me'
 description: 'A smattering of my main interests, skills, and experience.'
 layout: 'about'
-image: './src/assets/images/profile-photo.jpg'
+image: './src/assets/images/my-portrait-photo.jpg'
 alt: "Oleksandr's portrait photo"
 breakout:
   title: 'As the world rapidly changes, so do I'
