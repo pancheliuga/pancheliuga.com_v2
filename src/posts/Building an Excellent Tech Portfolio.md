@@ -18,7 +18,7 @@ With enthusiasm, I invite you to explore the revamped [pancheliuga.com](https://
 
 **Technology Stack:**
 
-- [**Jamstack architecture**](<(https://en.wikipedia.org/wiki/Jamstack)>) with [**Eleventy static site generator**](https://www.11ty.dev/) as the backbone.
+- [**Jamstack architecture**](https://en.wikipedia.org/wiki/Jamstack) with [**Eleventy static site generator**](https://www.11ty.dev/) as the backbone.
 - **Git** as the content management system (CMS).
 - Front-end trio: **HTML, CSS, and JavaScript**.
 - Leverage of **Netlify PaaS** for DNS management and CI/CD integration.
