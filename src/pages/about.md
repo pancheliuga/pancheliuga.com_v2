@@ -12,7 +12,7 @@ finalWords: 'I humbly refrain from labeling myself an expert in any area, as I f
 primaryCTA:
   title: 'For recruiters only'
   teaser: "Explore my resume for a perfect match and let's make remarkable strides together. Reach out today!"
-  goal: '#'
+  goal: 'https://resume.pancheliuga.com/'
   button: 'My resume'
 ---
 
